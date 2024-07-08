@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pedido - Jitterbit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo Jitterbit">
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações do Cliente</legend>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <label for="rua">Rua e Número</label>
+                <input type="text" id="rua" name="rua" required>
+                <label for="complemento">Complemento</label>
+                <input type="text" id="complemento" name="complemento">
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" required>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione...</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required>
+            </fieldset>
+            <fieldset>
+                <legend>Informações do Pedido</legend>
+                <label for="id-prd">Id Produto</label>
+                <select id="id-prd" name="id-prd" required>
+                    <option value="prd1">Produto 1</option>
+                    <option value="prd2">Produto 2</option>
+                    <option value="prd3">Produto 3</option>
+                    <option value="prd4">Produto 4</option>
+                    <option value="prd5">Produto 5</option>
+                </select>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" required>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="pagamento" value="cartao" required> Cartão de Crédito
+                    </label>
+                    <label>
+                        <input type="radio" name="pagamento" value="boleto" required> Boleto Bancário
+                    </label>
+                    <label>
+                        <input type="radio" name="pagamento" value="paypal" required> PayPal
+                    </label>
+                </div>
+            </fieldset>
+            <div class="button-group">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar </button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>©2023 Jitterbit. jitterbit.com</p>
+        <p>Endereço: Rua, 123, Bairro, Cidade, Estado</p>
+        <p>Telefone: (99) 99999-9999 | E-mail: contato@jitterbit.com</p>
+    </footer>
+</body>
+</html>
